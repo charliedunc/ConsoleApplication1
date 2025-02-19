@@ -1,15 +1,15 @@
 #include <iostream>
+using namespace std;
 int main() {
 	// Constants
-	const double tankCapacity = 20.0; // Tank capacity in gallons
-	const double citymilesPerGallon = 23.5; // Miles per gallon in the city
-	const double highwaymilesPerGallon = 28.9; // Miles per gallon on the highway
-	// Calculate distance for city driving
-	double cityDistance = tankCapacity * citymilesPerGallon;	
-	// Calculate distance for highway driving
-	double highwayDistance = tankCapacity * highwaymilesPerGallon;	
-	// Display the results	
-	std::cout << "When driven in town, the car can travel " << cityDistance << " miles on a one tank of gas." << std::endl; 
-	std::cout << "when driven on the highway, the car can travel " << highwayDistance << " miles on a one tank of gas." << std::endl;
-	return 0;	
+	const int totalcustomers = 16500; // Total number of customers surveyed
+	const double percentbuyenergy = 0.15; // 15% purchase energy drinks
+	const double percentcitrusflavor = 0.58; // 58% prefer citrus flavor
+	// Calculate the number of customers who purchase energy drinks 
+	int customersbuyenergy = totalcustomers * percentbuyenergy;
+	// Calculate the number of customers who prefer citrus flavor
+	int customerscitrusflavor = totalcustomers * percentcitrusflavor;
+	// Display results 
+	cout << "The number of customers who purchase one or more energy drink per week: " << customersbuyenergy << endl;
+	cout << "The number of customers who prefer citrus flavor: " << customerscitrusflavor << endl;
 }
