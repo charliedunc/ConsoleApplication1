@@ -1,14 +1,15 @@
-#include <iostream>	
-using namespace std;
+#include <iostream>
 int main() {
-	// The rate of rise in millimeters per year
-	const double rateofrise = 1.5; // millimeters per year
-	// Years of future projections
-	int years[] = { 5, 7, 10 };
-	//Loop through each year and calculate the ocean's rise level
-	for (int i = 0; i < 3; i++) {
-		int currentYear = years[i];
-		double rise = rateofrise * currentYear; // Calculate the rise in millimeters
-		cout << " millimeters higher." << endl;
-	}
+	// Constants
+	const double tankCapacity = 20.0; // Tank capacity in gallons
+	const double citymilesPerGallon = 23.5; // Miles per gallon in the city
+	const double highwaymilesPerGallon = 28.9; // Miles per gallon on the highway
+	// Calculate distance for city driving
+	double cityDistance = tankCapacity * citymilesPerGallon;	
+	// Calculate distance for highway driving
+	double highwayDistance = tankCapacity * highwaymilesPerGallon;	
+	// Display the results	
+	std::cout << "When driven in town, the car can travel " << cityDistance << " miles on a one tank of gas." << std::endl; 
+	std::cout << "when driven on the highway, the car can travel " << highwayDistance << " miles on a one tank of gas." << std::endl;
+	return 0;	
 }
